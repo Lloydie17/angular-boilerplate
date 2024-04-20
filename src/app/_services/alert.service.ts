@@ -16,19 +16,19 @@ export class AlertService {
 
     // convenience methods
     success(message: string, options?: any) {
-        this.alert(new Alert({ ...options, type: AlertType.Success, message}))
+        this.alert(new Alert({ ...options, type: AlertType.Success, message }));
     }
 
     error(message: string, options?: any) {
-        this.alert(new Alert({ ...options, type: AlertType.Error, message}))
+        this.alert(new Alert({ ...options, type: AlertType.Error, message }));
     }
 
     info(message: string, options?: any) {
-        this.alert(new Alert({ ...options, type: AlertType.Info, message}))
+        this.alert(new Alert({ ...options, type: AlertType.Info, message }));
     }
 
     warn(message: string, options?: any) {
-        this.alert(new Alert({ ...options, type: AlertType.warn, message}))
+        this.alert(new Alert({ ...options, type: AlertType.Warning, message }));
     }
 
     // core alert method
